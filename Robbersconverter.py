@@ -2,7 +2,8 @@ from tkinter import *
 
 root = Tk()
 root.title("Robber's language translator")
-root.geometry('435x250')
+root.geometry('410x250')
+root.resizable(width=False, height=False)
 
 #More Information command
 def moreinfo():
@@ -11,10 +12,10 @@ def moreinfo():
 #Encoding and decoding mechanism
 #From Robber's to regular 
 def encode():
-    encoded = encodeddisplay.get() 
+    encoded = encodeddisplay.get()
     decoded = ''
     i = 0
-    consonant = 'bcdfghjklmnpqrstvxz'
+    consonant = 'bcdfghjklmnpqrstvwxz'
     while i < len(encoded):
         #If a vowel, let it remain
         if (encoded[i].lower() not in consonant):            
@@ -30,12 +31,11 @@ def encode():
             else:
                 decodeddisplay.delete(0, END)
                 decodeddisplay.insert(INSERT, "Error")
-                break                              
-    return decoded
-
+                break
+            
 #From regular to Robber's
 def decode():
-    consonant = 'bcdfghjklmnpqrstvxz'
+    consonant = 'bcdfghjklmnpqrstvwxz'
     decoded = decodeddisplay.get()
     robber = ''
     for word in decoded:
