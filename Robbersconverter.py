@@ -30,9 +30,7 @@ def encode():
             else:
                 decodeddisplay.delete(0, END)
                 decodeddisplay.insert(INSERT, "Error")
-                break
-                                
-                              
+                break                              
     return decoded
 
 #From regular to Robber's
