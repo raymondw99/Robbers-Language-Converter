@@ -7,7 +7,7 @@ root.resizable(width=False, height=False)
 
 #More Information command
 def moreinfo():
-    messagebox.showinfo("What is Robber's Language?", "Robber's language is a Swedish language game,popularised by author Astrid Lindgren. The principle of this cipher is to take a syllable and double every consonant (spelling matters, not pronunciation) while inserting an 'o' in-between, vowels are left intact.It is therefore possible to render the Rövarspråket version of an English word as well.")
+    messagebox.showinfo("What is Robber's Language?", "Robber's language is a Swedish language game, popularised by author Astrid Lindgren. The principle of this cipher is to take a syllable and double every consonant (spelling matters, not pronunciation) while inserting an 'o' in-between, vowels are left intact.It is therefore possible to render the Rövarspråket version of an English word as well.")
     
 #Encoding and decoding mechanism
 #From Robber's to regular 
